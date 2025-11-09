@@ -1,7 +1,6 @@
 import "./global.css";
 import { PropsWithChildren } from "react";
 import type { Metadata } from "next";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,12 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body>
-        {children}
-        <Script type="text/javascript" src="/js/spatial_navigation.js" />
-        <Script type="text/javascript" src="/js/webOSTV.js" />
-        <Script type="text/javascript" src="/js/main.js" />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
