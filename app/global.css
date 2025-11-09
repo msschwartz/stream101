@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -18,5 +20,5 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  display: flex;
+  display: -webkit-flex;
 }
