@@ -12,6 +12,17 @@ export default function Home() {
         priority
       />
       <div className="my-4 text-2xl">Welcome to Next.js!</div>
+      <div className="flex flex-row">
+        <div className="control ctrl block p-4 border-4 border-gray-500 m-4 focus:outline-none focus:border-red-500">
+          card1
+        </div>
+        <div className="control ctrl block p-4 border-4 border-gray-500 m-4 focus:outline-none focus:border-red-500">
+          card2
+        </div>
+        <div className="control ctrl block p-4 border-4 border-gray-500 m-4 focus:outline-none focus:border-red-500">
+          card3
+        </div>
+      </div>
     </div>
   );
 }
