@@ -1,7 +1,8 @@
 import { useFocusable } from "@noriginmedia/norigin-spatial-navigation";
 
-export function Button() {
+export function Button({ focusKey }: { focusKey: string }) {
   const { ref, focused } = useFocusable({
+    focusKey,
     onEnterPress: () => {
       alert("Button pressed!");
     },

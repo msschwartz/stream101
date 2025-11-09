@@ -1,10 +1,13 @@
 import { ButtonList } from "@/components/ButtonList";
-import { init } from "@noriginmedia/norigin-spatial-navigation";
+import { init, setFocus } from "@noriginmedia/norigin-spatial-navigation";
 import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    init({});
+    init({
+      // visualDebug: true,
+    });
+    setFocus("buttonList");
   }, []);
   return (
     <div className="flex min-h-screen items-center justify-center">
